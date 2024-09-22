@@ -1,7 +1,3 @@
-# Auto detect text files and perform LF normalization
-* text=auto
-
-
 # My first exercise
 drink_number = [1, 3, 7, 9, 11]
  for drink in drink_number:
