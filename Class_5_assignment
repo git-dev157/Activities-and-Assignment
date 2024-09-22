@@ -1,6 +1,6 @@
 #Write a function that prints the last digit of a number.
-#Prototype: def print_last_digit(number):
-#Returns the value of the last digit
+#.Prototype: def print_last_digit(number):
+#..Returns the value of the last digit
 
     # Assignment no.1 solution
     def print_last_digit(number):
