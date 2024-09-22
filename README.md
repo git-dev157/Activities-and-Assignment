@@ -2,6 +2,7 @@
 This repository will contain all my codes
 
 Class 6 question's answers
+
 1.Why is a base case needed in recursion?
     ans==A base case in recursion is needed to stop the function from calling itself forever.
           Think of it like a finish line: it tells the function when to stop running.
