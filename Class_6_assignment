@@ -1,1 +1,41 @@
+#create a function that takes multiple numbers (using *args), filters out the even ones using filter(), 
+#doubles the result using map(), and then calculates their sum using reduce().
+
+  #Assignment no.1 solution
+    from functools import reduce
+
+      def process_numbers(*args):
+      # Step 1: Filter even numbers
+      even_numbers = filter(lambda x: x % 2 == 0, args)
+    
+        # Step 2: Double the even numbers
+        doubled_numbers = map(lambda x: x * 2, even_numbers)
+    
+        # Step 3: Sum the doubled numbers
+        total_sum = reduce(lambda x, y: x + y, doubled_numbers, 0)
+    
+        return total_sum
+
+      # Example usage
+      result = process_numbers(1, 2, 3, 4, 5, 6)
+      print(result)  # Output: 24 (since 2 + 4 + 6 are the even numbers, doubled to 4, 8, 12, and summed)
+
+
+#Create a function describe_person() that takes positional and keyword arguments to describe a person.
+
+  #Assignment no.2 solution
+  def describe_person(*args, **kwargs):
+    # Joining the positional arguments (names) into a single string
+    name = " ".join(args)
+    
+    # Extracting the keyword arguments (details)
+    age = kwargs.get('age', 'unknown')
+    location = kwargs.get('location', 'unknown location')
+    occupation = kwargs.get('occupation', 'unknown occupation')
+    
+    # Creating the descriptive sentence
+    description = (f"{name} is {age} years old, lives in {location}, "
+                   f"and works as a {occupation}.")
+    
+    print(description)
 
